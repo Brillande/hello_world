@@ -4,6 +4,7 @@ import 'description_place.dart';
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+  String descriptionDummy = "Salamanca its the favorite place of Joseba. No ones knows why but this place its undefined. Maybe someone can find it. remenber one thing: Follow your dreams.";
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text("Hello World"),
         ) ,
-        body: new DescriptionPlace(),
+        body: new DescriptionPlace("Salamanca", 4 , descriptionDummy),
       )
     );
   }
